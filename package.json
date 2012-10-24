@@ -1,0 +1,12 @@
+{
+  "name": "nodeproject",
+  "description": "This is just a test repo for me to learn node.js by implementing all of the basic building blocks needed to create a modern web framework (https, auth, modules, etc)",
+  "author": "Adam Eivy <atomantic@gmail.com>",
+  "version": "1.0.0",
+  "dependencies": {
+  },
+  "devDependencies": {
+    "vows": "0.5.x"
+  },
+  "engine": "node >= 0.8.x"
+}

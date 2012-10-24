@@ -12,9 +12,11 @@ var https = require('https'),
       cert: fs.readFileSync('./certs/certificate.pem')
     },
     conf = new Config();
-
+       
 https.createServer(options, function (req, res) {
   res.writeHead(200);
   res.end("this site is running in the "+process.env.NODE_ENV+" environment and debug mode is configured as "+conf.debug+"\n");
-}).listen(8000);
-console.log('Server running at https://localhost:8000/ as '+process.env.NODE_ENV+' with config debug as '+conf.debug);
+}).listen(conf.port);
+  
+  
+console.log('Server running at https://localhost:'+conf.port+'/ as '+process.env.NODE_ENV+' with config debug as '+conf.debug);

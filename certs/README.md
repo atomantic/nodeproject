@@ -1,5 +1,6 @@
 # certs
 you will need to generate your own https certs. These files will be ignored in git :)
+This is taken care of for you if you run ../install.sh
 
 in this directory:
 
